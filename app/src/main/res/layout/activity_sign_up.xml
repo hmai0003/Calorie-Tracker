@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/signup_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="98dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <EditText
+                android:id="@+id/signup_surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Surname"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="97dp"
+                tools:layout_editor_absoluteY="116dp" />
+
+            <EditText
+                android:id="@+id/signup_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                tools:layout_editor_absoluteX="98dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <EditText
+                android:id="@+id/signup_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:hint="Date Of Birth"
+                android:inputType="date"
+                tools:layout_editor_absoluteX="98dp"
+                tools:layout_editor_absoluteY="269dp" />
+
+            <EditText
+                android:id="@+id/signup_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Height"
+                android:inputType="number|numberDecimal" />
+
+            <EditText
+                android:id="@+id/signup_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Weight"
+                android:inputType="numberDecimal" />
+
+            <RadioGroup
+                android:id="@+id/radioGender"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/signnup_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/signup_postcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Postcode"
+                android:inputType="number" />
+
+            <Spinner
+                android:id="@+id/signupActLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/signupSteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="steps per mile"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/signupUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/signupPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
